@@ -24,7 +24,6 @@ a{
 }
 
 .headerimg{
-    padding:20px ;
    width:100%;
    
 }
@@ -33,22 +32,26 @@ header {
   justify-content: space-between; /* reparte izquierda/derecha */
   align-items: center;
    background: #0E264C;
-  padding: 10px 5%;
+  padding: 5px 5%;
   position: fixed;   /* fija la barra en la ventana */
   top: 0;            /* pegada arriba */
   left: 0;           /* pegada a la izquierda */
   width: 100%;       /* que ocupe todo el ancho */
   z-index: 1000;     /* asegura que quede encima del contenido */
- 
 }
 
 .menu{ 
-  width: 60px;
+  width: 15%;
 }
 
 .nav-links li{
     display: inline-block;
     padding: 0px 20px;
+   
+}
+.nav-links a {
+  font-size: 16px; 
+  text-decoration: none;
 }
 
 .nav-links li a{
@@ -61,7 +64,7 @@ header {
 nav {
   list-style-type: none;
   padding: 0; 
-  margin: none;  
+  margin: none; 
 }
 
 
@@ -560,7 +563,7 @@ body.portfolio {
 .digital h1{
     font-family: 'Playfair Display', serif;
     margin-top: 30px;
-  font-size: 600%;
+  font-size: 80px;
 
   color: #FFF7DB;
   margin-bottom: 70px;
@@ -694,7 +697,7 @@ font-weight: lighter;
 }
 .digital3 h1{
     font-family: 'Playfair Display', serif;
-  font-size: 600%;
+  font-size: 80px;
   width: 70%;
   color: #0E264C;
   margin-bottom: 70px;
@@ -741,7 +744,7 @@ margin-left: 3rem;
 .tradicional h1{
     font-family: 'Playfair Display', serif;
     margin-top: 30px;
-  font-size: 600%;
+  font-size: 80px;
 
   color: #0E264C;
   margin-bottom: 70px;
