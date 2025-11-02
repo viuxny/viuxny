@@ -366,6 +366,9 @@ display:flex;
 flex-direction:column;
 gap: 10px;
 }
+.info-producto h2{
+  font-size: 20px;
+}
 
 .precio{
     font-size: 18px;
