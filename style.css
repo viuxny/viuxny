@@ -29,37 +29,52 @@ a{
 }
 header {
   display: flex;
-  justify-content: space-between; /* reparte izquierda/derecha */
   align-items: center;
-   background: #0E264C;
-  padding: 5px 5%;
-  position: fixed;   /* fija la barra en la ventana */
-  top: 0;            /* pegada arriba */
-  left: 0;           /* pegada a la izquierda */
-  width: 100%;       /* que ocupe todo el ancho */
-  z-index: 1000;     /* asegura que quede encima del contenido */
+  background: #0E264C;
+  padding: 8px 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-.menu{ 
-  width: 15%;
+/* LOGO */
+.menu {
+  height: 45px; /* <-- Tamaño controlado, no ocupa demasiado */
+  width: auto;
+  flex-shrink: 0; /* evita que el logo se deforme */
 }
 
-.nav-links li{
-    display: inline-block;
-    padding: 0px 15px;
-   
+/* CONTENEDOR DEL MENÚ */
+nav {
+  flex: 1; /* <-- Esto hace que los links usen todo el espacio restante */
 }
+
+/* LISTA DEL MENÚ */
+.nav-links {
+  display: flex; /* <-- Para que estén siempre en una sola línea */
+  justify-content: flex-end; /* A la derecha */
+  align-items: center;
+  gap: 18px; /* espacio parejo */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* LINKS */
 .nav-links a {
-  font-size: 14px; 
+  font-size: 15px;
+  color: #74A2A1;
   text-decoration: none;
+  font-family: inherit;
+  transition: 0.3s;
 }
 
-.nav-links li a{
-    transition: all 0.3s ease 0s;
+.nav-links a:hover {
+  color: #FF782F;
 }
-.nav-links li a:hover{
-    color: #FF782F;
-}
+
 
 
 
