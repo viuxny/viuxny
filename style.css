@@ -1021,3 +1021,120 @@ body {
 footer {
   margin-top: auto;
 }
+
+/* ===================== */
+/*   RESPONSIVE GENERAL   */
+/* ===================== */
+
+@media (max-width: 1024px) {
+  /* Productos pasan a 2 columnas */
+  .container-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Header: menú y carrito más juntos */
+  header {
+    padding: 10px 3%;
+  }
+
+  .nav-links li {
+    padding: 0 10px;
+  }
+
+  /* Productos: 1 columna en celular */
+  .container-items {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  /* Hero section se apila */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 1rem;
+  }
+
+  .portfolio-titulo,
+  .hero-text .subtitle {
+    margin-left: 0;
+  }
+
+  /* About section se apila */
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .about-photo img {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .about-text {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  /* Secciones digitales */
+  .digital,
+  .dspj1,
+  .digital3 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .digital h1,
+  .digital3 h1 {
+    font-size: clamp(2rem, 10vw, 4rem);
+  }
+
+  .digital-texto, .digital-texto2 {
+    width: 100%;
+  }
+
+  .container-digital {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* En celular puro, todo 1 columna */
+  .container-digital {
+    grid-template-columns: 1fr;
+  }
+
+  /* Ajuste tamaños de títulos */
+  .viuxny {
+    font-size: clamp(2rem, 16vw, 4rem);
+  }
+
+  .portfolio-titulo {
+    font-size: clamp(1.8rem, 10vw, 3rem);
+  }
+
+  /* Comisiones bloques apilados */
+  .comisiones-que {
+    flex-direction: column;
+  }
+
+  .com-card {
+    max-width: 100%;
+  }
+
+  /* Footer más cómodo en móvil */
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+}
