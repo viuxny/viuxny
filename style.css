@@ -567,6 +567,7 @@ body.portfolio {
 }
 .digital h2{
 width: 50%;
+font-weight: lighter;
   font-size: 20px;
   margin-bottom: 1rem;
   color: #FFF7DB;
@@ -670,6 +671,7 @@ width: 35%;
 
 .digital-texto2{
 width: 70%;
+font-weight: lighter;
   font-size: 14px;
   margin-top: 10%;
   margin-bottom: 5%;
@@ -682,7 +684,7 @@ width: 70%;
   flex-wrap: wrap;
   align-items: center;
   padding: 4rem;
-   background: linear-gradient(to bottom, #fff7db, #74A2A1);
+   background: linear-gradient(to bottom, #fff7db, #FF782F);
  }
 
 .digital3{
@@ -718,10 +720,94 @@ width: 60%;
 
 }
 
+.okp{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 4rem;
+ background: linear-gradient(to bottom,  #74A2A1, #fff7db);
+ 
+}
+
+.tradicional{
+  width: 100%;
+ display: flex;
+margin-left: 3rem;
+}
+.tradicional-texto {
+  margin-top: 5%;
+  width: 50%;
+}
+.tradicional h1{
+    font-family: 'Playfair Display', serif;
+    margin-top: 30px;
+  font-size: 600%;
+
+  color: #0E264C;
+  margin-bottom: 70px;
+}
+.tradicional h2{
+width: 50%;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+  color: #0E264C;
+  
+}
+
+
+.tradic {
+  position: relative;
+  width:40%;
+  max-width: 800px;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+/* Efecto de agrandamiento al hacer hover */
+.tradic:hover {
+  transform: scale(1.05); /* crece suavemente */
+ 
+}
+
+.tradic img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  transition: opacity 0.4s ease;
+}
+.container-tradicional {
+  margin-top: 5%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+   gap: 20px; 
+   width: 100%;
+
+}
+
+.tradicional2{
+    border-radius: 10px;
+}
 
 
 
+.tradicional2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+    transition:all .3s;
+}
 
+.tradicional2:hover img{
+    transform: scale(1.2);
+}
+.tradicional2 figure{
+    overflow: hidden;
+}
 
 /*COMISIONES*/
 
