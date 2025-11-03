@@ -164,22 +164,22 @@ document.getElementById("checkout-form").addEventListener("submit", function(eve
   const templateParams = {
     to_name: nombre,
     to_email: email,
-    message: `Gracias por tu compra 💖\n\n${productos}`,
+    message: `Gracias por tu compra 💖\n\n${productos}\n\n${pago}`,
     total: total,
-    payment_info: "Alias para transferencia: viuky.mp\nO pagar por MP: https://mpago.la/abcd1234"
+    payment_info: "Alias para transferencia: viuky.mp\nO pagar por MP: https://link.mercadopago.com.ar/viuxnyshop"
   };
   
   // mail para vos
   const adminParams = {
     to_name: "Viuxny",
     to_email: "daxteryeehaw@gmail.com", // tu correo
-    message: `Nuevo pedido de ${nombre} (${email})\n\n${productos}`
+    message: `Nuevo pedido de ${nombre} (${email})\n\n${productos}\n\n${pago}`
   };
 
   // Enviar ambos correos
   Promise.all([
     emailjs.send("service_1b5m4ql", "template_zjqxjir", templateParams),
-    emailjs.send("service_1b5m4ql", "template_zjqxjir", adminParams)
+    emailjs.send("service_1b5m4ql", "template_9xymn6q", adminParams)
   ])
   .then(() => {
     alert("Pedido enviado correctamente. Revisá tu correo.");
